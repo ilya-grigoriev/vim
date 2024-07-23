@@ -1,4 +1,4 @@
-nnoremap <buffer> ,r :!python %<CR>
+nnoremap <buffer> <CR> :!python %<CR>
 
 " Manim
-nnoremap ,pm :terminal ++close manim -pql %<CR>
+nnoremap "pm :terminal ++close manim -pql %<CR>

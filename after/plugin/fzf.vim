@@ -1,2 +1,2 @@
-nnoremap ,f :FZF<CR>
-nnoremap ,g :Rg<CR>
+nnoremap 'f :FZF<CR>
+nnoremap 'r :Rg<CR>

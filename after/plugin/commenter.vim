@@ -5,4 +5,4 @@ let g:NERDDefaultAlign = 'left'
 let g:NERDCommentEmptyLines = 1
 let g:NERDTrimTrailingWhitespace = 1
 let g:NERDToggleCheckAllLines = 1
-vmap <silent> ,c <plug>NERDCommenterToggle
+vmap <silent> 'c <plug>NERDCommenterToggle

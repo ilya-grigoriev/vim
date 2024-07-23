@@ -5,7 +5,6 @@ nnoremap 's :%s/
 nnoremap <C-n> :Ntree<CR>
 nnoremap 't :tabnew<CR>
 nnoremap <C-Bslash> :tab :terminal ++close<CR>
-nnoremap ,s :%s/
 
 nnoremap gb <C-^>
 
