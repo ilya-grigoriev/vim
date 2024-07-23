@@ -1,9 +1,9 @@
-nnoremap ,c :!cc %<CR>
-nnoremap ,r :!./a.out<CR>
-nnoremap ,m :ClangFormat<CR>
+nnoremap <buffer> ,c :!cc %<CR>
+nnoremap <buffer> ,r :!./a.out<CR>
 
 function DebugC()
 	:!cc -g % 
 	:!gdb --tui a.out
 endfunction
-nnoremap ,d :call DebugC()<CR>
+
+nnoremap <buffer> ,d :call DebugC()<CR>
