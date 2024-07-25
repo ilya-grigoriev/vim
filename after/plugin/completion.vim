@@ -4,4 +4,4 @@ let b:ale_linters = {
 			\ }
 set signcolumn=no
 let g:ale_virtualtext_cursor = 'disabled'
-nnoremap ,e :ALEDetail<CR>
+nnoremap 'e :ALEDetail<CR>
