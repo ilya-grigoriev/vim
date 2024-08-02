@@ -1,2 +1,2 @@
 set statusline=%f
-set statusline+=%=%l:%c
+set statusline+=%=%l:%c\ 
