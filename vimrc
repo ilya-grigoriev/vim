@@ -14,6 +14,8 @@ nnoremap <C-k> :move -2<CR>
 nnoremap "t :!ctags -R .<CR>
 
 set relativenumber
+set number
+
 set colorcolumn=79
 set cursorline
 set wildmenu
