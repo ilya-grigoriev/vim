@@ -1,4 +1,4 @@
-let mapleader = ","
+let mapleader = "'"
 
 imap jk <Esc>
 nnoremap 's :%s/
@@ -13,14 +13,17 @@ nnoremap <C-k> :move -2<CR>
 
 nnoremap "t :!ctags -R .<CR>
 
+" For fast moving
 set relativenumber
 set number
 
+" UI setup
 set colorcolumn=79
 set cursorline
 set wildmenu
 set ignorecase
 
+" Moving setup
 set scrolloff=10
 set scroll=5
 
@@ -45,3 +48,5 @@ hi NonText guibg=NONE ctermbg=NONE
 hi LineNr guibg=NONE ctermbg=NONE
 hi StatusLine guibg=NONE ctermbg=NONE ctermfg=white guifg=white
 hi SignColumn guibg=NONE ctermbg=NONE
+hi TabLineSel ctermbg=white ctermfg=black cterm=NONE
+hi TabLine ctermbg=NONE ctermfg=white
