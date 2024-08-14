@@ -2,26 +2,45 @@ tmap <C-g> <C-\><C-n>
 
 nnoremap <C-h> gT
 nnoremap <C-l> gt
-" tnoremap <C-h> <C-\><C-n>gT
-" tnoremap <C-l> <C-\><C-n>gt
 
 imap <C-s> <Esc>:w<CR>a
 
-nnoremap [<Space> O<Esc>j
-nnoremap ]<Space> o<Esc>k
+" Insiped by tpope
+fun! AddLineBeforeCursor()
+	let cur_col = col('.') - 1
+	call feedkeys("O\<Esc>j0")
+	call feedkeys(cur_col . "l")
+endf
+fun! AddLineAfterCursor()
+	let cur_col = col('.') - 1
+	call feedkeys("o\<Esc>k0")
+	call feedkeys(cur_col . "l")
+endf
 
-" Insiper by tpope
+nnoremap [<Space> :call AddLineBeforeCursor()<CR>
+nnoremap ]<Space> :call AddLineAfterCursor()<CR>
+
 fun! DeleteLineBeforeCursor()
 	let cur_line = line(".")
-	if cur_line != 1
+	let cur_col = col(".") - 1
+
+	if (cur_line != 1)
 		call feedkeys("kdd")
+		call feedkeys(cur_col . "l")
 	endif
 endf
 fun! DeleteLineAfterCursor()
 	let cur_line = line(".")
+	let cur_col = col(".") - 1
+
 	let last_line = line("$")
-	if cur_line != last_line
-		call feedkeys("jddk")
+
+	if (cur_line != last_line)
+		call feedkeys("jdd")
+		if (cur_line != (last_line - 1))
+			call feedkeys("k")
+		endif
+		call feedkeys(cur_col . "l")
 	endif
 endf
 nnoremap [x :call DeleteLineBeforeCursor()<CR>
