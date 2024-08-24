@@ -14,3 +14,5 @@ function DebugC()
 endfunction
 
 nnoremap <buffer> 'd :call DebugC()<CR>
+
+set completeopt=menu,menuone,popup,noselect,noinsert
