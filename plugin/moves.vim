@@ -4,6 +4,19 @@ nnoremap <C-h> gT
 nnoremap <C-l> gt
 
 imap <C-s> <Esc>:w<CR>a
+nnoremap <C-s> <Esc>:w<CR>
+
+" for delete current part of sentence
+nnoremap vi, T,vt,
+nnoremap va, F,vf,
+
+" for delete current sentence
+nnoremap vi. T.vt.
+nnoremap va. F.vf.
+
+" for delete end part of sentence
+nnoremap vie T,vt.
+nnoremap vae F,vt.
 
 " Insiped by tpope
 fun! AddLineBeforeCursor()
