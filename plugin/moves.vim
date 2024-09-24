@@ -6,17 +6,21 @@ nnoremap <C-l> gt
 imap <C-s> <Esc>:w<CR>a
 nnoremap <C-s> <Esc>:w<CR>
 
-" for delete current part of sentence
+" for select current part of sentence
 nnoremap vi, T,vt,
 nnoremap va, F,vf,
 
-" for delete current sentence
+" for select current sentence
 nnoremap vi. T.vt.
 nnoremap va. F.vf.
 
-" for delete end part of sentence
+" for select end part of sentence
 nnoremap vie T,vt.
 nnoremap vae F,vt.
+
+" for select regex pattern in Perl
+nnoremap vi/ T/vt/
+nnoremap va/ F/vf/
 
 " Insiped by tpope
 fun! AddLineBeforeCursor()
