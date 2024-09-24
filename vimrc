@@ -40,6 +40,17 @@ syntax on
 
 vnoremap <C-y> :w !xclip -i -sel c<CR><CR>
 
+nnoremap "p :so:PlugInstall<CR>
+call plug#begin()
+Plug 'tpope/vim-surround'
+Plug 'nanotech/jellybeans.vim'
+Plug 'SirVer/ultisnips'
+Plug 'dense-analysis/ale'
+Plug 'lervag/vimtex'
+Plug 'honza/vim-snippets'
+Plug 'junegunn/fzf.vim'
+call plug#end()
+
 color jellybeans
 
 " For transparency
