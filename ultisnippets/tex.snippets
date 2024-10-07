@@ -16,10 +16,19 @@ snippet start "My Preambule"
 \usepackage[utf8]{inputenc}
 \usepackage[russian]{babel}
 \usepackage{indentfirst}
+\usepackage{tcolorbox}
 \usepackage[a4paper,top=2cm,bottom=2cm,right=1.5cm,left=2.5cm]{geometry}
 
+\usepackage{hyperref}
+\hypersetup{colorlinks=true}
+
+\title{${1}}
+\date{}
+
 \begin{document}
-	${1}
+	\maketitle
+	\tableofcontents
+	${2}
 \end{document}
 endsnippet
 
@@ -160,4 +169,12 @@ endsnippet
 
 snippet fn "Footnotesize"
 \footnotesize 
+endsnippet
+
+snippet vc "Vector"
+\overrightarrow{${1}}
+endsnippet
+
+snippet ms "Math symbol"
+$\\${1}$
 endsnippet
