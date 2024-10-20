@@ -22,6 +22,7 @@ set colorcolumn=79
 set cursorline
 set wildmenu
 set ignorecase
+set hlsearch
 
 " Moving setup
 set scrolloff=10
