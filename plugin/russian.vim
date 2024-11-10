@@ -14,3 +14,4 @@ nnoremap ч x
 nnoremap г u
 
 nnoremap к r
+nnoremap щ o
