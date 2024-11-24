@@ -6,17 +6,7 @@ nnoremap <C-l> gt
 imap <C-s> <Esc>:w<CR>a
 nnoremap <C-s> <Esc>:w<CR>
 
-" for select current part of sentence
-nnoremap vi, T,vt,
-nnoremap va, F,vf,
-
-" for select current sentence
-nnoremap vi. T.vt.
-nnoremap va. F.vf.
-
-" for select end part of sentence
-nnoremap vie T,vt.
-nnoremap vae F,vt.
+nnoremap <C-b> :tag<CR>
 
 " for select regex pattern in Perl
 nnoremap vi/ T/vt/
