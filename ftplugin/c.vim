@@ -2,11 +2,11 @@ nnoremap <buffer> 'c :!cc -g %<CR>
 
 fun! RunCwithArgs()
 	let args = input('Enter arguments for executable file: ')
-	:!./a.out g:args
+	:!clear && ./a.out g:args
 	unlet args
 endf
 nnoremap <buffer> 'a :call RunCwithArgs()<CR>
-nnoremap <buffer> <CR> :!./a.out<CR>
+nnoremap <buffer> <CR> :!cc -g % && clear && ./a.out<CR>
 
 function DebugC()
 	:!cc -g % 
