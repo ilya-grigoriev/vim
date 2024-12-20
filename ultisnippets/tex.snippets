@@ -11,7 +11,7 @@ snippet tikz "Create tikz environment"
 endsnippet
 
 snippet start "My Preambule"
-\documentclass[14pt]{extreport}
+\documentclass[14pt]{extarticle}
 \usepackage[T2A]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[russian]{babel}
@@ -22,14 +22,10 @@ snippet start "My Preambule"
 \usepackage{hyperref}
 \hypersetup{colorlinks=true}
 
-\title{${1}}
-\date{${2}}
-\author{${3}}
-
 \begin{document}
-	\maketitle
 	\tableofcontents
-	${4}
+	\newpage
+	${1}
 \end{document}
 endsnippet
 
@@ -186,4 +182,8 @@ endsnippet
 
 snippet () "Create left-right parenthesis"
 \left(${1}\right)
+endsnippet
+
+snippet par "Create paragraph"
+\paragraph{${1}}
 endsnippet
