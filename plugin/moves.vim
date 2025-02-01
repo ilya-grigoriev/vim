@@ -3,6 +3,8 @@ tmap <C-g> <C-\><C-n>
 nnoremap <C-h> gT
 nnoremap <C-l> gt
 
+nnoremap <Space> :nohlsearch<CR>
+
 imap <C-s> <Esc>:w<CR>a
 nnoremap <C-s> <Esc>:w<CR>
 
