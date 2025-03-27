@@ -54,3 +54,6 @@ fun! DeleteLineAfterCursor()
 endf
 nnoremap [x :call DeleteLineBeforeCursor()<CR>
 nnoremap ]x :call DeleteLineAfterCursor()<CR>
+
+nnoremap H 0
+nnoremap L $
