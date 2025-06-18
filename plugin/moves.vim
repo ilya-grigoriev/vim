@@ -57,3 +57,5 @@ nnoremap ]x :call DeleteLineAfterCursor()<CR>
 
 nnoremap H 0
 nnoremap L $
+vnoremap H 0
+vnoremap L $
