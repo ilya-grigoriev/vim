@@ -1,10 +1,6 @@
 nnoremap ф a
 nnoremap ш i
 
-nnoremap о j
-nnoremap л k
-nnoremap р h
-nnoremap д l
 nnoremap и b
 nnoremap ц w
 nnoremap у e
@@ -15,3 +11,7 @@ nnoremap г u
 
 nnoremap к r
 nnoremap щ o
+
+nnoremap а f
+nnoremap ж ;
+nnoremap б ,
