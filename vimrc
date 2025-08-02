@@ -41,7 +41,11 @@ filetype indent on
 
 syntax on
 
-vnoremap <C-y> :w !xclip -i -sel c<CR><CR>
+if $XDG_SESSION_TYPE == "wayland"
+	vnoremap <C-y> :w !wl-copy -n<CR><CR>
+elseif $XDG_SESSION_TYPE == "x11"
+	vnoremap <C-y> :w !xclip -i -sel c<CR><CR>
+endif
 
 nnoremap "p :so:PlugInstall<CR>
 call plug#begin()
@@ -52,7 +56,10 @@ Plug 'dense-analysis/ale'
 Plug 'lervag/vimtex'
 Plug 'honza/vim-snippets'
 Plug 'junegunn/fzf.vim'
+Plug 'takac/vim-hardtime'
 call plug#end()
 
 color jellybeans
 color transparency
+
+let g:hardtime_default_on = 1
