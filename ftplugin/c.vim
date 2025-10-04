@@ -1,18 +1,5 @@
-nnoremap <buffer> 'c :!cc -g %<CR>
-
-fun! RunCwithArgs()
-	let args = input('Enter arguments for executable file: ')
-	:!clear && ./a.out g:args
-	unlet args
-endf
-nnoremap <buffer> 'a :call RunCwithArgs()<CR>
-nnoremap <buffer> <CR> :!cc -g % && clear && ./a.out<CR>
-
-function DebugC()
-	:!cc -g % 
-	:!gdb --tui a.out
-endfunction
-
-nnoremap <buffer> 'd :call DebugC()<CR>
+nnoremap <buffer> <CR> :!gcc % -o %< && clear && ./%< <CR>
+nnoremap <buffer> "a :!gcc -S % && less %<.s <CR>
+nnoremap <buffer> "o :!gcc -c % && objdump -d -Mintel %<.o \| less <CR>
 
 set completeopt=menu,menuone,popup,noselect,noinsert
