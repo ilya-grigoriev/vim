@@ -6,8 +6,8 @@ snippet m "math mode"
 $ $1 $
 endsnippet
 
-snippet b "bold text"
-bold($1)
+snippet bf "bold text"
+*$1*
 endsnippet
 
 snippet cen "centering text"
@@ -17,10 +17,7 @@ $1
 endsnippet
 
 snippet pb
-
-#pagebreak
-
-
+#pagebreak()
 endsnippet
 
 snippet l "link"
@@ -29,4 +26,18 @@ endsnippet
 
 snippet t "text"
 op("$1")
+endsnippet
+
+snippet b
+\`$1\`
+endsnippet
+
+snippet img
+#align(
+  figure(image("$1"))
+)
+endsnippet
+
+snippet var
+#let $1 = $2
 endsnippet
