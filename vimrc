@@ -57,6 +57,7 @@ Plug 'lervag/vimtex'
 Plug 'honza/vim-snippets'
 Plug 'junegunn/fzf.vim'
 Plug 'takac/vim-hardtime'
+Plug 'kaarmu/typst.vim'
 call plug#end()
 
 color jellybeans
