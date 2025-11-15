@@ -2,7 +2,7 @@ snippet d
 upright(d)
 endsnippet
 
-snippet m "math mode"
+snippet mm "display math mode"
 $ $1 $
 endsnippet
 
@@ -34,10 +34,46 @@ endsnippet
 
 snippet img
 #align(
+  center,
   figure(image("$1"))
 )
 endsnippet
 
 snippet var
 #let $1 = $2
+endsnippet
+
+snippet m "inline math mode"
+$$1$
+endsnippet
+
+snippet ali "align"
+#align(
+	center,
+	$1
+)
+endsnippet
+
+snippet tab "table"
+table(
+	columns: $1,
+	[$2]
+endsnippet
+
+snippet sca "scale"
+scale(
+	$1%,
+	$2
+)
+endsnippet
+
+snippet v "vertical gap"
+#v($1)
+endsnippet
+
+snippet fig "figure"
+#figure(
+	caption: [$1],
+	$2
+)
 endsnippet
