@@ -8,6 +8,7 @@ nnoremap <C-Bslash> :tab :terminal ++close<CR>
 nnoremap 't :tabnew<CR>
 
 nnoremap gb <C-^>
+nnoremap 'h :Jumps<CR>
 
 nnoremap <C-j> :move +1<CR>
 nnoremap <C-k> :move -2<CR>
