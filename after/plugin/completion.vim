@@ -4,6 +4,8 @@ let g:ale_linters = {
 			\	'c': ['clangd'],
 			\	'rust': ['rustc'],
 			\	'perl': ['perl'],
+			\	'bash': ['shellcheck'],
+			\	'sh': ['shellcheck'],
 			\ }
 let g:ale_fixers = {
 			\	'c': ['clang-format'],
